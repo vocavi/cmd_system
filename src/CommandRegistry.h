@@ -6,8 +6,7 @@
 
 #include "Command.h"
 
-class CommandRegistry
-{
+class CommandRegistry{
 public:
 	void registerCommand(const std::string& name, std::shared_ptr<Command> cmd);
 	std::shared_ptr<Command> getCommand(const std::string& name);
