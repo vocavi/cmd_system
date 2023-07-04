@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Command.h">
+    <ClInclude Include="src\ICommand.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\CommandRegistry.h">
@@ -30,7 +30,7 @@
     <ClInclude Include="src\DefaultCommandManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="tests\CommandSystemTest.cpp">
+    <ClInclude Include="src\CommandSystem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

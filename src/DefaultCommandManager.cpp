@@ -1,11 +1,16 @@
 #include "DefaultCommandManager.h"
 
-CommandSystem::DefaultCommandManager::DefaultCommandManager()
-{
-	this->dispatcher = std::make_unique<CommandDispatcher>(std::make_unique<CommandRegistry>());
+namespace CommandSystem {
+
+	DefaultCommandManager::DefaultCommandManager()
+	{
+		this->dispatcher = std::make_unique<CommandDispatcher>(std::make_unique<CommandRegistry>());
+	}
+
+	std::unique_ptr<std::string> DefaultCommandManager::runCommand(const std::string& name)
+	{
+		return this->dispatcher->dispatch(name);
+	}
+
 }
 
-std::unique_ptr<std::string> CommandSystem::DefaultCommandManager::runCommand(const std::string& name)
-{
-	return this->dispatcher->dispatch(name);
-}
