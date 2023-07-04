@@ -3,14 +3,17 @@
 #include "ICommandManager.h"
 #include "CommandDispatcher.h"
 
-class DefaultCommandManager : public ICommandManager{
+namespace CommandSystem {
 
-public:
-	DefaultCommandManager();
+	class DefaultCommandManager : public ICommandManager {
 
-	std::unique_ptr<std::string> runCommand(const std::string& name) override;
+	public:
+		DefaultCommandManager();
 
-private:
-	std::unique_ptr<CommandDispatcher> dispatcher;
-};
+		std::unique_ptr<std::string> runCommand(const std::string& name) override;
+
+	private:
+		std::unique_ptr<CommandDispatcher> dispatcher;
+	};
+}
 

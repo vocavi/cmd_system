@@ -6,13 +6,14 @@
 
 #include "Command.h"
 
-class CommandRegistry{
-public:
-	void registerCommand(const std::string& name, std::shared_ptr<Command> cmd);
-	std::shared_ptr<Command> getCommand(const std::string& name);
+namespace CommandSystem {
+	class CommandRegistry {
+	public:
+		void registerCommand(const std::string& name, std::shared_ptr<Command> cmd);
+		std::shared_ptr<Command> getCommand(const std::string& name);
 
-private:
-	std::unordered_map<std::string, std::shared_ptr<Command>> commandMap;
+	private:
+		std::unordered_map<std::string, std::shared_ptr<Command>> commandMap;
 
-};
-
+	};
+}

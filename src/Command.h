@@ -3,9 +3,10 @@
 #include <string>
 #include <memory>
 
-//An abstract class that all commands must inherit
-class Command{
-public:
-	virtual std::unique_ptr<std::string> onExecute() = 0;
-};
-
+namespace CommandSystem {
+	//An abstract class that all commands must inherit
+	class Command {
+	public:
+		virtual std::unique_ptr<std::string> onExecute() = 0;
+	};
+}
