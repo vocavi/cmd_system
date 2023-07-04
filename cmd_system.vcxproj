@@ -139,11 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="CommandRegistry.h" />
+    <ClInclude Include="src\CommandRegistry.h" />
     <ClInclude Include="src\Command.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CommandRegistry.cpp" />
+    <ClCompile Include="src\CommandRegistry.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

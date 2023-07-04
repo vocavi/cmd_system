@@ -18,12 +18,12 @@
     <ClInclude Include="src\Command.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CommandRegistry.h">
+    <ClInclude Include="src\CommandRegistry.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CommandRegistry.cpp">
+    <ClCompile Include="src\CommandRegistry.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
