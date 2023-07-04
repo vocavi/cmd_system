@@ -139,10 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\CommandDispatcher.h" />
     <ClInclude Include="src\CommandRegistry.h" />
     <ClInclude Include="src\Command.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\CommandDispatcher.cpp" />
     <ClCompile Include="src\CommandRegistry.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

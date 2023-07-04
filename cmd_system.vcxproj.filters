@@ -21,9 +21,15 @@
     <ClInclude Include="src\CommandRegistry.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\CommandDispatcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\CommandRegistry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CommandDispatcher.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
