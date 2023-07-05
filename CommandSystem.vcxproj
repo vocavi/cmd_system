@@ -83,14 +83,14 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)include</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
     <ExcludePath>$(ProjectDir)tests;$(ExcludePath)</ExcludePath>
     <OutDir>$(SolutionDir)$(ProjectName)\out\$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)include</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)$(ProjectName)\out\$(Platform)\$(Configuration)\</OutDir>
     <ExcludePath>$(CommonExcludePath);$(VC_ExecutablePath_x64);$(VC_LibraryPath_x64);$(ProjectDir)tests;$(ProjectDir)out</ExcludePath>
@@ -152,17 +152,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\CommandSystem.h" />
-    <ClInclude Include="src\DefaultCommandManager.h" />
-    <ClInclude Include="src\CommandDispatcher.h" />
-    <ClInclude Include="src\CommandRegistry.h" />
-    <ClInclude Include="src\ICommand.h" />
-    <ClInclude Include="src\ICommandManager.h" />
+    <ClInclude Include="include\DefaultManager.h" />
+    <ClInclude Include="src\DefaultDispatcher.h" />
+    <ClInclude Include="src\DefaultRegistry.h" />
+    <ClInclude Include="include\ICommand.h" />
+    <ClInclude Include="include\ICommandManager.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\DefaultCommandManager.cpp" />
-    <ClCompile Include="src\CommandDispatcher.cpp" />
-    <ClCompile Include="src\CommandRegistry.cpp" />
+    <ClCompile Include="src\DefaultManager.cpp" />
+    <ClCompile Include="src\DefaultDispatcher.cpp" />
+    <ClCompile Include="src\DefaultRegistry.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -9,7 +9,7 @@
 namespace CommandSystem {
 	class CommandRegistry {
 	public:
-		void registerCommand(const std::string& name, std::shared_ptr<ICommand> cmd);
+		void registerCommand(const std::string& name, std::unique_ptr<ICommand> cmd);
 		std::shared_ptr<ICommand> getCommand(const std::string& name);
 
 	private:

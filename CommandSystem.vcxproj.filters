@@ -15,33 +15,30 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\ICommand.h">
+    <ClInclude Include="include\ICommand.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\CommandRegistry.h">
+    <ClInclude Include="src\DefaultRegistry.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\CommandDispatcher.h">
+    <ClInclude Include="src\DefaultDispatcher.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\ICommandManager.h">
+    <ClInclude Include="include\ICommandManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\DefaultCommandManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\CommandSystem.h">
+    <ClInclude Include="include\DefaultManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\CommandRegistry.cpp">
+    <ClCompile Include="src\DefaultRegistry.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\CommandDispatcher.cpp">
+    <ClCompile Include="src\DefaultDispatcher.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\DefaultCommandManager.cpp">
+    <ClCompile Include="src\DefaultManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
